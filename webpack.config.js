@@ -3,13 +3,13 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     mode: isDev ? 'development' : 'production',
-    entry: './client/app.js',
+    entry: './client/App.js',
     output: {
         path: __dirname,
         filename: './public/bundle.js'
     },
     resolve: {
-        extenstions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     devtool: 'source-map',
     module: {
